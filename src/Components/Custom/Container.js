@@ -15,6 +15,7 @@ const Container = (props) => {
             height: "100%",
             display: "flex",
             alignItems: "center",
+            flexDirection: "column",
             justifyContent: "center",
             bgcolor: "background.default",
         }}>
