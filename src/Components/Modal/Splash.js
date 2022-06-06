@@ -11,8 +11,8 @@ import { Box, Typography } from '@mui/material';
 const Splash = (props) => {
     return (
         <Box sx={{
-            width: "100vw",
-            height: "100vh",
+            width: "100%",
+            height: "100%",
             zIndex: "2000",
             display: "flex",
             alignItems: "center",
