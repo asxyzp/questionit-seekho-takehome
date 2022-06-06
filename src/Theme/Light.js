@@ -10,7 +10,7 @@ const LightTheme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#2086c3',
+            main: '#8073b1',
         },
         secondary: {
             main: '#f766a1',
@@ -18,6 +18,10 @@ const LightTheme = createTheme({
         error: {
             main: '#f57030',
         },
+        background: {
+            default: "#D3D3D3",
+            paper: "#FFFFFF"
+        }
     },
     typography: {
         fontFamily: "'Akshar', sans-serif",
