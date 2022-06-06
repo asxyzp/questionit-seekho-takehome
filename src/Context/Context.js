@@ -1,4 +1,5 @@
 // IMPORTING PACKAGES/MODULES
+import { useMediaQuery } from '@mui/material';
 import React, { useState, useContext, createContext } from 'react';
 
 // APPLICATION CONTEXT
@@ -22,15 +23,25 @@ export const useAppContext = () => {
 const Context = (props) => {
 
     // STATES WHICH WILL BE PASSED AS CONTEXT VALUE
+    const [questions, setQuestions] = useState([]);
     const [modalType, setModalType] = useState('');
     const [darkMode, setDarkMode] = useState(false);
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+
+    // SETTING MEDIA QUERY
+    const mobileMode = useMediaQuery('(max-width:750px)');
 
     // CONTEXT VALUE TO BE PASSED
     const ContextVal = {
         darkMode: darkMode,
         modalType: modalType,
+        questions: questions,
+        mobileMode: mobileMode,
+        currentQuestion: currentQuestion,
         setDarkMode: setDarkMode,
-        setModalType: setModalType
+        setQuestions: setQuestions,
+        setModalType: setModalType,
+        setCurrentQuestion: setCurrentQuestion,
     };
 
     return (
