@@ -1,6 +1,6 @@
 # QuestionIt
 
-QuestionIt! is a small question-and-answer app built as a take home project for seekho.ai. It uses [https://opentdb.com/](Open Trivia DB API) to fetch multiple choice questions from which the user can select a correct option. The score/result is shown at the end.
+QuestionIt! is a small question-and-answer app built as a take home project for seekho.ai. It uses [Open Trivia DB API](https://opentdb.com/) to fetch multiple choice questions from which the user can select a correct option. The score/result is shown at the end.
 
 ## Available Scripts
 
