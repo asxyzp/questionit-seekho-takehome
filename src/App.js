@@ -156,15 +156,6 @@ const App = (props) => {
         setDarkMode(!darkMode);
     };
 
-    /**
-     * @name closeModal
-     * @description METHOD TO CLOSE MODAL
-     * @returns undefined
-     */
-    const closeModal = () => {
-        setModalType("");
-    };
-
     // USING useEffect TO LOAD SPLASH SCREEN AND CALL API ENDPOINTS
     useEffect(() => {
 
@@ -181,47 +172,6 @@ const App = (props) => {
             <CssBaseline />
             <ModalRouter />
             <Container>
-
-                {/* MODAL TO SHOW APPLICATION INFO */}
-                <Modal
-                    sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-                    open={modalType === "about"}
-                    onClose={closeModal}>
-                    <Box sx={{ width: containerWidth, mx: "auto", bgcolor: "background.paper", p: "10px", borderRadius: "4px" }}>
-                        <Typography component="div" variant="h4" sx={{ textAlign: "center", mb: "10px" }}> QuestionIt!</Typography>
-                        <Typography component="div" variant="body" sx={{ textAlign: "center", mb: "10px" }}> QuestionIt! is a simple question and answer app built as a take home assignment for Seekho.ai by Aashish Loknath Panigrahi. The questions for this Q&A app are fetched from OpenTriviaDB API.</Typography>
-                        <Typography component="div" variant="body" sx={{ textAlign: "center", mb: "10px" }}> &copy; {(new Date()).getFullYear()} Aashish Loknath Panigrahi </Typography>
-                    </Box>
-                </Modal>
-
-                {/* MODAL TO SHOW SELECTED ANSWERS */}
-                <Modal
-                    sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-                    open={modalType === "selected"}
-                    onClose={closeModal}>
-                    <Box sx={{ width: containerWidth, mx: "auto", bgcolor: "background.paper", p: "10px", borderRadius: "4px" }}>
-                        <Typography component="div" variant="h6" sx={{ width: "100%", textAlign: "center", mb: "15px", color: "primary.main", fontWeight: "bolder" }}>Selected answers</Typography>
-                        {
-                            questions
-                                .filter((question) => {
-                                    if (question.selected !== "") return true;
-                                    else return false;
-                                }).length > 0 ?
-                                questions
-                                    .filter((question) => {
-                                        if (question.selected !== "") return true;
-                                        else return false;
-                                    })
-                                    .map((question) => {
-                                        return (<>
-                                            <Box sx={{ width: "85%", mx: "auto", textAlign: "center", mb: "5px" }} dangerouslySetInnerHTML={{ __html: question.question }} />
-                                            <Typography component="div" variant="body" sx={{ width: "100%", mb: "15px", textAlign: "center" }}> <Box sx={{ display:"inline", fontWeight: "bold" }}>Your answer:</Box> {question.selected} </Typography>
-                                        </>);
-                                    }) :
-                                <Box sx={{ textAlign: "center" }}>Answer a few questions!</Box>
-                        }
-                    </Box>
-                </Modal>
 
                 {/* SHOWING CONFETTI WHEN THE RESULT IS SHOWN */}
                 {

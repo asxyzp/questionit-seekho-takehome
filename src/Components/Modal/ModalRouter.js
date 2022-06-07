@@ -1,6 +1,8 @@
 // IMPORTING PACKAGES/MODULES
 import React from 'react';
+import About from './About';
 import Splash from './Splash';
+import Selected from './Selected';
 import { useAppContext } from '../../Context/Context';
 
 /**
@@ -16,6 +18,8 @@ const ModalRouter = (props) => {
 
     // RETURNING MODAL COMPONENT BASED ON MODAL TYPE
     if (modalType === 'splash') return (<Splash />);
+    else if (modalType === 'about') return (<About />);
+    else if (modalType === 'selected') return (<Selected />);
     else return (<></>);
 };
 
