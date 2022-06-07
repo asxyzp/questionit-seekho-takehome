@@ -24,7 +24,7 @@ QuestionIt! is a simple question-and-answer app built as a take home project for
 - /src/Theme => Contains app theming 
 
  ## Screens & Routing
-- / => Quiz page
+- / => Quiz page => App.js
 
 ## Technologies, Packages & External Resources Used
 
@@ -36,12 +36,12 @@ QuestionIt! is a simple question-and-answer app built as a take home project for
 - State management: Context API
 
 ## Screenshots
-
 ![Home](https://i.ibb.co/s2gsVWc/home.png)
-![alt text](https://i.ibb.co/JtzMP31/dark.png)
+![alt text](https://i.ibb.co/F8JPJSD/menu.png)
 ![alt text](https://i.ibb.co/WKWRS39/selected.png)
 ![alt text](https://i.ibb.co/wNx4Q6j/result.png)
 ![alt text](https://i.ibb.co/bgpGcyr/about.png)
+![alt text](https://i.ibb.co/JtzMP31/dark.png)
 
 ## Available Scripts
 
