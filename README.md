@@ -1,6 +1,47 @@
 # QuestionIt
 
-QuestionIt! is a small question-and-answer app built as a take home project for seekho.ai. It uses [Open Trivia DB API](https://opentdb.com/) to fetch multiple choice questions from which the user can select a correct option. The score/result is shown at the end.
+QuestionIt! is a simple question-and-answer app built as a take home project for seekho.ai. It uses [Open Trivia DB API](https://opentdb.com/) to fetch multiple choice questions from which the user can select a correct option. The score/result is shown at the end.
+
+## QuestionIt brand guide
+
+**Colors**:
+- Primary: #8073b1
+- Secondary: #f766a1
+- Error: #f57030
+
+**Background colors (Light mode)**
+- default: #F3F3F4
+- paper: #FFFFFF
+
+**Fonts**:
+- App: 'Akshar', sans-serif
+
+## App Directory Structure
+- /src/API => Contains API endpoint call for fetching questions
+- /src/Components/Custom => Contains custom MUI components
+- /src/Components/Modal => Contains modals & modal router
+- /src/Context => Contains app context used by Context API
+- /src/Theme => Contains app theming 
+
+ ## Screens & Routing
+- / => Quiz page
+
+## Technologies, Packages & External Resources Used
+
+- Language: JS
+- Framework: React
+- Fonts: Google Fonts
+- Icons: Material Icons
+- Component library: MUI
+- State management: Context API
+
+## Screenshots
+
+![Home](https://i.ibb.co/s2gsVWc/home.png)
+![alt text](https://i.ibb.co/JtzMP31/dark.png)
+![alt text](https://i.ibb.co/WKWRS39/selected.png)
+![alt text](https://i.ibb.co/wNx4Q6j/result.png)
+![alt text](https://i.ibb.co/bgpGcyr/about.png)
 
 ## Available Scripts
 
